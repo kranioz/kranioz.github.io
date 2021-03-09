@@ -1,0 +1,55 @@
+.debut {
+    text-align: center;
+    color: red;
+    font-size: 85%;
+    width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #0000004f;
+    border: 3px solid black;
+    text-shadow: 2px 2px 1px black;
+}
+
+img[src] {
+    width: 60px;
+    transition: transform 0.8s ease;
+}
+
+img[src]:hover {
+    transform: translate(0, -20px);
+}
+
+html {
+    background-color: black;
+}
+
+.texte strong {
+    color: green;
+}
+
+.texte {
+    size: 18px;
+    text-align: left;
+}
+
+body {
+    padding: 0 20px 20px 20px ;
+    background-color: lightcyan;
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px solid white;
+    font-family: 'Acme', sans-serif;
+}
+
+#ytb {
+    text-align: center;
+    size: 22px;
+}
+
+a {
+    color: rgb(218, 9, 9);
+}
+
+
+
