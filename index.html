@@ -13,6 +13,7 @@
             <h2>je suis en <strong>3ème</strong> et plus tard je veux travailler dans l'informatique</h2>
         </div>
         <div class="texte">
+            <input class="bout" id="CSS" type="button" value="CLIQUEZ!!!!!!!!!!">
             <p>Depuis tout petit, j'aime les jeux vidéos.</p>
             <span>J'ai commencé par l'univers de <strong>Minecraft</strong> </span>
             <a href="https://www.minecraft.net/fr-fr/" target="blank"> 
@@ -31,5 +32,36 @@
             <p id="ytb">Aujourd'hui ma chaîne Youtube existe encore, la voici:</p>
             <a id="ytb" href="https://www.youtube.com/channel/UCoO9D-jzgAuV77FMR5t9k3g" target="_blank">Ma chaîne Youtube</a>       
         </div>
+        <canvas id="clickCV" width="600" height="0"></canvas>
+        <script>
+            var rnb = Math.floor(Math.random() * 600) + 1;
+            var dnd = Math.floor(Math.random() * 200) + 1;
+            var css = document.getElementById("CSS");
+            var boutton = document.querySelector(".bout");
+            var canvas = document.getElementById("clickCV");
+            var clicks = 0;
+            var e = false;
+            boutton.addEventListener('click', principale);
+            function principale() {
+                clicks += 1;
+                css.style.left = Math.floor(Math.random() * 600) + "px";
+                css.style.top = Math.floor(Math.random() * 600) + "px";
+                if(boutton.value === 'CLIQUEZ!!!!!!!!!!') {
+                    boutton.value = 'NUL CONTINUEZ !!!!!!';
+                }
+                if(clicks === 50) {
+                    console.debug("good");
+                    if (e == false) {
+                        alert("et bah c'est bien GG enfin");
+                        RedirectionJS();
+                        e = true;
+                    }
+                }
+                console.debug("click");  
+            }
+            function RedirectionJS(){
+                document.location.href="https://discord.gg/tdEFvtETnR"
+            }
+        </script>
     </body>
 </html>

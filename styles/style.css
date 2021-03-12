@@ -51,5 +51,14 @@ a {
     color: rgb(218, 9, 9);
 }
 
+.bout {
+    width: 2000;
+    margin: auto;
+    display: block;
+    color: red;
+    size: 70px;
+    position: absolute;
+    left: 500px
+}
 
 
